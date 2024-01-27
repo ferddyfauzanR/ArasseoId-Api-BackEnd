@@ -19,3 +19,41 @@ Content-Type: application/json
 }
 ###
 DELETE  http://localhost:8002/categories/2
+
+
+### TEST PRODUCT API
+
+
+###
+GET http://localhost:8002/product
+
+###
+
+GET http://localhost:8002/product/1
+###
+POST http://localhost:8002/product
+Content-Type: application/json
+
+{
+    "name": "BTS JUNGKOOK2",
+    "description": "TEST",
+    "image_product": "test",
+    "price": "200000",
+    "sku":"test",
+    "categories_id":"1"
+}
+###
+PATCH http://localhost:8002/product/1
+Content-Type: application/json
+
+{
+    "name": "BTS JUNGKOOK22222",
+    "description": "TEST",
+    "image_product": "test",
+    "price": "200000",
+    "sku":"test",
+    "categories_id":"1"
+}
+
+###
+DELETE http://localhost:8002/product/3
